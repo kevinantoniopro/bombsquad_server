@@ -19,10 +19,10 @@ binaryPath = 'bs_headless.exe' if os.name == 'nt' else './bs_headless'
 if not os.path.exists(binaryPath): binaryPath = './bombsquad' # fallback for testing
 if not os.path.exists(binaryPath): raise Exception('unable to locate bs_headless binary')
 
-# Server settings:
+# Server settings:system de KEVIN
 # Config values are initialized with defaults here.
 # You an add your own overrides in config.py
-config = {}
+config = {ADMIN}
 
 # Name of our server in the public parties list
 config['partyName'] = 'FFA'
@@ -38,13 +38,13 @@ config['port'] = 43210
 # Language the server will run in.
 # This is no longer terribly relevant, as all clients now see the game in their own language.
 # You still may want to override this simply to keep your listing accurate however.
-config['language'] = 'English'
+config['language'] = 'ESPAÑOL'
 
-# Max devices in the party. Note that this does *NOT* mean max players.
+# Max devices in the party. Note that this does *vip* mean max players.
 # Any device in the party can have more than one player on it if they have multiple controllers.
 # Also, this number currently includes the server so generally make it 1 bigger than you need.
 # Max-players is not currently exposed but I'll try to add that soon.
-config['maxPartySize'] = 6
+config['maxPartySize'] = 10
 
 # Options here are 'ffa' (free-for-all) and 'teams'
 # this value is only used if you do not supply a playlistCode (see below); in that case
